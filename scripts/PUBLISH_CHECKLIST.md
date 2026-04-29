@@ -44,7 +44,7 @@ huggingface-cli login
 huggingface-cli repo create kuksa-vectordbs \
   --type dataset \
   --private
-# → huggingface.co/datasets/simoninhochoi/kuksa-vectordbs (private)
+# → huggingface.co/datasets/cjoseph509/kuksa-vectordbs (private)
 ```
 
 ### tar.gz 업로드 — 작은 것부터
@@ -55,18 +55,18 @@ cd "c:/Users/inhoc/Projects/국편 db"
 # 작은 것 5개 일괄 (한 번에)
 for f in wongoryeo goryeosa_jeolyo dongmun_hwigo goryeosa jung_jeongsa; do
   echo "==== uploading $f ===="
-  huggingface-cli upload simoninhochoi/kuksa-vectordbs \
+  huggingface-cli upload cjoseph509/kuksa-vectordbs \
     "dist/${f}.tar.gz" "${f}.tar.gz" \
     --repo-type dataset
 done
 
 # 중간/큰 것 (각각 시간 더 걸림)
-huggingface-cli upload simoninhochoi/kuksa-vectordbs dist/bibyeonsa.tar.gz bibyeonsa.tar.gz --repo-type dataset
-huggingface-cli upload simoninhochoi/kuksa-vectordbs dist/kuksa_history.tar.gz kuksa_history.tar.gz --repo-type dataset
-huggingface-cli upload simoninhochoi/kuksa-vectordbs dist/sillok.tar.gz sillok.tar.gz --repo-type dataset
+huggingface-cli upload cjoseph509/kuksa-vectordbs dist/bibyeonsa.tar.gz bibyeonsa.tar.gz --repo-type dataset
+huggingface-cli upload cjoseph509/kuksa-vectordbs dist/kuksa_history.tar.gz kuksa_history.tar.gz --repo-type dataset
+huggingface-cli upload cjoseph509/kuksa-vectordbs dist/sillok.tar.gz sillok.tar.gz --repo-type dataset
 
 # 승정원일기 (가장 큰, 16GB+ 가능)
-huggingface-cli upload simoninhochoi/kuksa-vectordbs dist/seungjeongwon.tar.gz seungjeongwon.tar.gz --repo-type dataset
+huggingface-cli upload cjoseph509/kuksa-vectordbs dist/seungjeongwon.tar.gz seungjeongwon.tar.gz --repo-type dataset
 ```
 
 업로드 도중 끊기면 같은 명령 재실행 — `huggingface-cli upload`는 chunk-resume 지원.
@@ -105,11 +105,11 @@ Primary sources: 공공누리 4유형 (each issuer policy applies).
 Vector DB derivative: friend distribution only (private).
 EOF
 
-huggingface-cli upload simoninhochoi/kuksa-vectordbs /tmp/dataset_README.md README.md --repo-type dataset
+huggingface-cli upload cjoseph509/kuksa-vectordbs /tmp/dataset_README.md README.md --repo-type dataset
 ```
 
 ### 친구 초대 (private dataset)
-HF 웹: https://huggingface.co/datasets/simoninhochoi/kuksa-vectordbs/settings → "Members" → 친구 HF 계정 추가
+HF 웹: https://huggingface.co/datasets/cjoseph509/kuksa-vectordbs/settings → "Members" → 친구 HF 계정 추가
 
 ## 3. 친구 측 사용법 (검증 절차)
 

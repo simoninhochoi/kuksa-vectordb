@@ -35,7 +35,7 @@ DATASETS: dict[str, tuple[str, str, str]] = {
     "seungjeongwon":      ("seungjeongwon.tar.gz",   "data/승정원일기/qdrant_server/",            "승정원일기 12 왕대 (~12GB 압축) ★ Docker Qdrant 필요"),
 }
 
-REPO_ID = "simoninhochoi/kuksa-vectordbs"
+REPO_ID = "cjoseph509/kuksa-vectordbs"
 ROOT = Path(__file__).resolve().parents[1]
 
 

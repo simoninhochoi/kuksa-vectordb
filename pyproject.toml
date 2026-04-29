@@ -1,0 +1,26 @@
+[project]
+name = "kuksa-vectordb"
+version = "0.1.0"
+description = "한국사료총서 121권을 BGE-M3 + Qdrant 하이브리드 벡터 DB로 구축, MCP 서버로 노출"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "lxml>=5.3",
+  "FlagEmbedding>=1.3.4",
+  "qdrant-client>=1.12",
+  "hanja>=0.15.1",
+  "mcp>=1.2",
+  "pydantic>=2.9",
+  "tqdm>=4.66",
+  "regex>=2024.11",
+  # FlagEmbedding 1.3.4가 transformers의 dtype kwarg를 사용하는데
+  # 4.55 이하에는 미존재, 4.57+에는 trainer 모듈 재구성으로 import 실패.
+  # 4.56.x 가 유일한 호환 윈도우.
+  "transformers>=4.56,<4.57",
+  "torch==2.6.0+cu124",
+]
+
+[tool.uv.sources]
+torch = { url = "https://download.pytorch.org/whl/cu124/torch-2.6.0%2Bcu124-cp312-cp312-win_amd64.whl" }
+
+[tool.uv]
+package = false

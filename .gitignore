@@ -1,0 +1,46 @@
+# 모든 데이터·바이너리·생성물 — Hugging Face Hub로 별도 배포
+data/
+extracted/
+tmp_*/
+**/qdrant_storage/
+
+# 원본 zip (저작권사 사이트에서 직접 받기)
+*.zip
+*.tar.gz
+
+# Python venv·캐시
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# 로그·임시 출력
+*.log
+**/*.jsonl.backup
+**/test_chunks_*.jsonl
+**/test_chunking.log
+**/search_*.json
+**/text_script_audit.txt
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 임시 인스펙션·일회성 분석 스크립트 (운영 코드 아님)
+src/dh_inspect.py
+src/dh_inspect2.py
+src/dh_test_chunking.py
+src/dh_search_qianlong_birthday*.py
+src/sillok_diag.py
+src/sillok_grep_jeongjo.py
+src/sillok_filter_daemyeong.py
+src/sillok_search_jeongjo_daemyeong.py
+src/sillok_patch_payload.py

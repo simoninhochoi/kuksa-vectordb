@@ -1,0 +1,121 @@
+{
+  "mcpServers": {
+    "kuksa-history": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "c:/Users/inhoc/Projects/국편 db",
+        "python",
+        "src/mcp_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "sillok": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "c:/Users/inhoc/Projects/국편 db",
+        "python",
+        "src/sillok_mcp_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "jung-jeongsa": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "c:/Users/inhoc/Projects/국편 db",
+        "python",
+        "src/jung_mcp_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "dongmun-hwigo": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "c:/Users/inhoc/Projects/국편 db",
+        "python",
+        "src/dh_mcp_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "wongoryeo": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "c:/Users/inhoc/Projects/국편 db",
+        "python",
+        "src/cnwk_mcp_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "goryeosa-jeolyo": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "c:/Users/inhoc/Projects/국편 db",
+        "python",
+        "src/kj_mcp_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "goryeosa": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "c:/Users/inhoc/Projects/국편 db",
+        "python",
+        "src/kr_mcp_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "bibyeonsa": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "c:/Users/inhoc/Projects/국편 db",
+        "python",
+        "src/bb_mcp_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "seungjeongwon": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "c:/Users/inhoc/Projects/국편 db",
+        "python",
+        "src/sjw_mcp_server.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}
